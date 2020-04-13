@@ -10,6 +10,6 @@ docker push lothid/multi-worker:latest
 docker push lothid/multi-worker:$SHA
 
 kubectl apply -f k8s/
-kubect set image deployments/client-deployment client=lothid/multi-client:$SHA
-kubect set image deployments/server-deployment server=lothid/multi-server:$SHA
-kubect set image deployments/worker-deployment worker=lothid/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=lothid/multi-client:$SHA
+kubectl set image deployments/server-deployment server=lothid/multi-server:$SHA
+kubectl set image deployments/worker-deployment worker=lothid/multi-worker:$SHA
